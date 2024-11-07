@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1>Test</h1>
+      <h1>Title</h1>
       {items.length===0 && <p>No items found</p>}
       <ul className="list-group">
         {items.map((item) => (
