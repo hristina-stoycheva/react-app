@@ -1,12 +1,10 @@
 import ListGroup from "./components/ListGroup";
 function App() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-  items = [];
 
   return (
     <>
       <h1>List</h1>
-      {items.length === 0 ? <p>No items found</p> : null}
       {items.length===0 && <p>No items found</p>}
       <ul className="list-group">
         {items.map((item) => (
