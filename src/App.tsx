@@ -1,17 +1,15 @@
+import { useState } from "react";
 import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
+
 function App() {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
 
   return (
-    <>
-      <h1>Title</h1>
-      {items.length===0 && <p>No items found</p>}
-      <ul className="list-group">
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-    </>
+    <div>
+    <Alert>
+      kuku <h2>Test</h2>
+    </Alert>
+    </div>
   );
 }
 export default App;
